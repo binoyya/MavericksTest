@@ -1,0 +1,152 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User login with valid credential",
+        "description": "",
+        "id": "reddit-login;user-login-with-valid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9040107410,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to \"reddit\" login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "reddit",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.iNavigateTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 206519128,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user login with \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 17
+                },
+                {
+                  "val": "password",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinitions.userTryToLoginWithAnd(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11948422934,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logged into the reddit home page",
+            "match": {
+              "location": "StepDefinitions.userLoggedIntoThredditHomePage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 198156439,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user able to view his subscribed subreddits",
+            "match": {
+              "location": "StepDefinitions.userAbleToViewHisSubscribesSubreddits()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214297744,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user able to view one of his subscribed subreddits",
+            "match": {
+              "location": "StepDefinitions.userAbleToViewOneOfHisSubscribedSubreddits()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5436826153,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user creates a comment on a post",
+            "match": {
+              "location": "StepDefinitions.userCreatesACommentOnAPost()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115612793,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user upvote a post",
+            "match": {
+              "location": "StepDefinitions.userUpvoteHisPost()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98225436,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user downvote a post",
+            "match": {
+              "location": "StepDefinitions.userDownvoteAPost()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1015001617,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user logged out from the reddit site",
+            "match": {
+              "location": "StepDefinitions.userLoggedOutFromTheRedditSite()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Reddit Login",
+    "description": "",
+    "id": "reddit-login",
+    "keyword": "Feature",
+    "uri": "./src/test/java/com/mevericks/automation/web/featureFiles/redditTest.feature"
+  }
+]
